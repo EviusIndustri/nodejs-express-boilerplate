@@ -1,0 +1,30 @@
+{
+  "name": "evius-node-express-boilerplate",
+  "version": "1.0.0",
+  "description": "Evius NodeJS Backend Boilerplate",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/index.js",
+    "build": "babel src --out-dir dist",
+    "start": "NODE_ENV=prod node dist/index.js"
+  },
+  "author": "Evius Industri",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-transform-regenerator": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/runtime": "^7.3.1",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "nodemon": "^1.18.3"
+  }
+}
